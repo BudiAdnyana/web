@@ -33,8 +33,11 @@
 						<td><?= $isi->nama_mahasiswa; ?></td>
 						<td><?= $isi->prodi; ?></td>
 						<td>
-							<a href="" class="btn btn-danger">Del</a>
-							<a href="" class="btn btn-warning">Edit</a>
+							<a href="delete.php?nim=<?php echo $isi->nim; ?>"
+							class="btn btn-danger">Delete</a>
+
+							<a href="edit.php?nim=<?php echo $isi->nim; ?>" 
+							class="btn btn-warning">Edit</a>
 						</td>
 
 					</tr>
@@ -42,6 +45,8 @@
 			</tbody>
 			
 		</table>
+
+		<a href="create.php" class="btn btn-info">Tambah Data</a>
 		
 	</div>
 
